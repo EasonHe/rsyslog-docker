@@ -1,3 +1,6 @@
+#修改成适配spring boot和nginx根据systag生成文件夹区分日志类型
+
+
 # rsyslog-docker
 a playground for rsyslog docker tasks - nothing production yet
 
