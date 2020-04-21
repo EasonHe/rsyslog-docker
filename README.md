@@ -1,6 +1,6 @@
 #修改成适配spring boot和nginx根据systag生成文件夹区分日志类型
-
-
+#启动挂载 docker run -p 514:514/udp -v /data/log:/log  easonhe/rsyslog-docker
+#把本地的 /data/log 挂载到容器，收集日志。
 # rsyslog-docker
 a playground for rsyslog docker tasks - nothing production yet
 
