@@ -4,7 +4,7 @@
 # desired values.
 
 # general container app settings:
-export TZ=UTC
+export TZ=CST
 #export CONTAINER_SILENT=on  # do not emit startup message
 export ENABLE_STATISTICS=on
 
@@ -13,6 +13,9 @@ export ENABLE_LOGFILES=on # yes, we do (comment out to disable)
 # Where do we write to?
 # path for host-specific files is: /logs/hosts/HOSTNAME
 export LOGFILES_STORE="/logs/hosts/%hostname:::secpath-replace%/messages.log"
+export NGINX_ACCESS="/logs/nginxlog/%app-name%/access.log"
+export NGINX_ERROR="/logs/nginxlog/%app-name%/error.log"
+
 # you can of course overwrite this. For example, the below definition
 # uses the program name instead of a fixed name "messages.log". That means
 # for each host, a separate file for each program will be generated.
